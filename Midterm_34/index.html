@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+    <title>CyBlog</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link href="./styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+
+  </head>
+  <body>
+
+    <main>
+      <section id="content">
+      </section>
+  </main>
+  
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+    
+    <header>
+      <div class="logo" onclick="goToHomePage()">CyBlog</div>
+      <nav>
+          <ul>
+              <li><a href="./index.html" onclick="goToHomePage()">Home</a></li>
+              <li><a href="./discussion.html" onclick="goToDiscussionPage()">Discussion</a></li>
+              <li><a href="./about.html" onclick="goToAboutPage()">About</a></li>
+          </ul>
+      </nav>
+  </header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <img src="./myotherimages/beardshear.jpg" alt="Beardshear" style="width: 100%; height: 100%">
+            <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Welcome to CyBlog!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <img src="./myotherimages/mu.jpg" alt="MU" style="width: 100%; height: 100%">
+          <div class="container">
+          <div class="carousel-caption text-start">
+          <h1>Iowa State Extent and OutReach</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+          <img src="./myotherimages/stadium.jpg" alt="Staidum" style="width: 100%; height: 100%">  
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Athletics and Sports</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+          <img src="./myotherimages/campus1.jpg" alt="Campus image 1" style="width: 100%; height: 100%">  
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Beautiful Campus</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+          <img src="./myotherimages/campus2.jpg" alt="Campus image 2" style="width: 100%; height: 100%">
+            <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Research Opportunities</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+        <img src="./myotherimages/campus3.jpg" alt="Campus image 3" style="width: 100%; height: 100%">
+          <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Campus Safety</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+  <div class="container marketing">
+
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Memorial Union</h2>
+        <p class="lead">The Memorial Union at Iowa State University (ISU) established in 1928 to honor World War I alumni, 
+          holds a special place in the heart of the campus, serving as a central hub for students, faculty, 
+          and visitors alike. With a diverse range of amenities, including meeting rooms, dining options, 
+          and student services, the Memorial Union remains a vital and dynamic part of the Iowa State University experience, 
+          fostering connections and enriching the university community. The union, often referred to simply as "the MU," 
+          stands as a symbol of tradition, community, and academic life.
+          </p>
+      </div>
+      <div class="col-md-5">
+
+        <img src="./myotherimages/mu_Info.jpeg" alt="watch" style="width: 800px; height: auto;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Beardshear Hall</h2>
+        <p class="lead">Beardshear Hall, a prominent landmark at Iowa State University, stands as a testament
+           to the institution's rich history and academic prominence. Named after the university's first president, 
+           William M. Beardshear, the building has been a cornerstone of campus life since its construction in 1906. 
+           Its grand architectural design, featuring neoclassical elements and a distinctive clock tower, adds to the 
+           university's charm. Today, Beardshear Hall continues to play a central role on campus, housing administrative
+            offices and symbolizing Iowa State's commitment to education and tradition.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+
+        <img src="./myotherimages/beardshear_Info.jpg" alt="Beardshear" style="width: 100%; height: 90%;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Campanile</h2>
+        <p class="lead">The Campanile at Iowa State University, completed in 1899, stands as an iconic symbol with a 110-foot
+           tower housing 50 bells. Serving both a functional and symbolic role, it memorializes former professor Margaret MacKay
+            and adds a touch of charm to the campus with its melodious chimes. This historic structure remains a timeless symbol 
+            of tradition and community at Iowa State University.
+
+        </p>
+      </div>
+      <div class="col-md-5">
+
+        <img src="./myotherimages/campanile.jpeg" alt="Campanile" style="width: 800px; height: auto;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Parks Library</h2>
+        <p class="lead">Parks Library at Iowa State University stands as a dynamic hub for academic exploration and
+           research. Named after Charlotte E. Parks, the library's modern design houses extensive print and digital 
+           resources, providing an essential space for students and researchers alike. From collaborative study areas
+            to state-of-the-art technology, Parks Library not only supports the diverse needs of the ISU community but 
+            also fosters a culture of intellectual engagement and learning at the heart of the campus.
+          </p>
+      </div>
+      <div class="col-md-5 order-md-1">
+
+        <img src="./myotherimages/library.jpg" alt="Library" style="width: 100%; height: 90%;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Dining</h2>
+        <p class="lead">Iowa State University's dining halls are integral to the campus experience, offering students diverse
+           and nutritious culinary options. With a commitment to quality and sustainability, the dining services provide a range
+           of meal plans accommodating various dietary preferences. The welcoming and communal atmosphere within these halls fosters
+            connections among students while enjoying freshly prepared meals. Beyond nourishment, the dining halls contribute to the 
+            vibrant campus culture, creating spaces where students can socialize, collaborate, and forge lasting memories.</p>
+      </div>
+      <div class="col-md-5">
+
+        <img src="./myotherimages/friley.jpg" alt="friley" style="width: 800px; height: auto;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">ISU creamery</h2>
+        <p class="lead">The ISU Creamery delights the campus community with its delectable dairy products. 
+          Operating under the Department of Food Science and Human Nutrition, the creamery is renowned for 
+          its commitment to quality and tradition. Students and visitors flock to the creamery to savor a diverse 
+          array of handcrafted ice creams, cheeses, and other dairy delights, all produced using locally sourced ingredients. 
+          Beyond its delectable offerings, the ISU Creamery also serves as an educational hub, providing students with hands-on
+           experience in dairy production and enhancing the overall culinary and agricultural learning experience at Iowa State University.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+
+        <img src="./myotherimages/creamery.jpg" alt="Creamery" style="width: 100%; height: 90%;">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+  </div>
+
+</main>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer>
+  <p>&copy; 2024 CyBlog. All rights reserved.</p>
+  <a href="https://www.facebook.com/">
+    <img src="./myotherimages/facebook.png" width="50px" viewbox="0 0 24 24">
+  </a>
+
+  <a href="https://www.instagram.com/">
+    <img src="./myotherimages/instagram.png" width="50px" viewbox="0 0 24 24">
+  </a>
+
+  <a href="https://www.youtube.com/">
+    <img src="./myotherimages/youtube.png" width="50px" viewbox="0 0 24 24">
+  </a>
+
+  <a href="https://www.snapchat.com">
+    <img src="./myotherimages/snapchat.png" width="50px" viewbox="0 0 24 24">
+  </a>
+
+  <a href="https://www.twitter.com/">
+    <img src="./myotherimages/twitter.png" width="50px" viewbox="0 0 24 24">
+  </a>
+</footer>
+<script src="./index.js"></script>
+    </body>
+</html>

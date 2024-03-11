@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<head>
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>CyBlog</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="./styles/discussion.css" rel="stylesheet">
+    <style>
+        #blogPosts {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 20px;
+            width: 7000px;
+        }
+        #searchInput {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 700px;
+            text-align: center;
+        }
+        .blogImage {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="goToHomePage()">CyBlog</div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" onclick="goToHomePage()">Home</a></li>
+                <li><a href="./discussion.html" onclick="goToDiscussionPage()">Discussion</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="blogForm" style="text-align: center; ">
+            <button onclick="showBlogForm()">POST BLOG</button>
+            <div id="blogSubmission" style="display: none;">
+                <input type="text" id="blogTopic" placeholder="Blog Topic">
+                <textarea id="blogDescription" placeholder="Blog Description"></textarea>
+                <input type="file" id="blogImage" accept="image/*" onchange="previewImage()" required>
+                <img src="" id="imagePreview" class="blogImage">
+                <button type="button" onclick="submitBlog()">Submit</button>
+            </div>
+        </div>
+        <h1 style="text-align: center; font-size: 10vw; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Search Blogs</h1>
+        <hr class="featurette-divider">
+        <div style="text-align: center;">
+            <input type="text" id="searchInput" placeholder="Search for Topics Below...">
+            <button onclick="search()">Search</button>
+        </div>
+        <div id="blogTopics" style="text-align: center;">
+        <input type="file" id="blogImage" accept="image/*" onchange="previewImage()">
+        <img src="./images" id="imagePreview" class="blogImage" width="508px" height="300px">
+        </div>
+    </main>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        window.onload = function() {
+            displayTopics();
+            previewImage();
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 CyBlog. All rights reserved.</p>
+        <a href="https://www.facebook.com/">
+          <img src="./myotherimages/facebook.png" width="50px" viewbox="0 0 24 24">
+        </a>
+      
+        <a href="https://www.instagram.com/">
+          <img src="./myotherimages/instagram.png" width="50px" viewbox="0 0 24 24">
+        </a>
+      
+        <a href="https://www.youtube.com/">
+          <img src="./myotherimages/youtube.png" width="50px" viewbox="0 0 24 24">
+        </a>
+      
+        <a href="https://www.snapchat.com">
+          <img src="./myotherimages/snapchat.png" width="50px" viewbox="0 0 24 24">
+        </a>
+      
+        <a href="https://www.twitter.com/">
+          <img src="./myotherimages/twitter.png" width="50px" viewbox="0 0 24 24">
+        </a>
+      </footer>
+</body>
+</html>
+
